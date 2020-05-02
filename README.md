@@ -30,27 +30,20 @@ sort        if TRUE, then the output is sorted into descending
 progress    if TRUE, a graph is displayed showing the progress
             of the computation
             
-            ####Example:
+#### Example:
 
 #### anova1(mag,floor(t/10))   
 
-test for changes in "mag" dependent on
-floor(t/10) as a categorical (rather
-than numerical) variable.  This is
-quivalent to using 10-day wide bins
+test for changes in "mag" dependent on floor(t/10) as a categorical (rather than numerical) variable.  This is quivalent to using 10-day wide bins
                                 
 #### anova1(mag,obs)    
-test for changes in "mag" dependent on
-the variable "obs" -- which might be
-observer I.D.  In this case it's OK
-if "obs" is a string variable -- since
-the anova1 routine converts the
-variable to a factor anyway, numeric
-variables are treated the same as
-non-numerics
+test for changes in "mag" dependent on the variable "obs" -- which might be observer I.D.  In this case it's OK
+if "obs" is a string variable -- since the anova1 routine converts the variable to a factor anyway, numeric
+variables are treated the same as non-numerics.
+
 ##### ##################################################################
 
-### aovper
+####  aovper
 
 
                         **********
