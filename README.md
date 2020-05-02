@@ -29,14 +29,14 @@ sort        if TRUE, then the output is sorted into descending
             order of the number of occurences of each factor
 progress    if TRUE, a graph is displayed showing the progress
             of the computation
+            
+            ####Example:
 
-Example:
-
-anova1(mag,floor(t/10))         # test for changes in "mag" dependent on
+* anova1(mag,floor(t/10))         # test for changes in "mag" dependent on
                                 # floor(t/10) as a categorical (rather
                                 # than numerical) variable.  This is
                                 # equivalent to using 10-day wide bins
-anova1(mag,obs)                 # test for changes in "mag" dependent on
+* anova1(mag,obs)                 # test for changes in "mag" dependent on
                                 # the variable "obs" -- which might be
                                 # observer I.D.  In this case it's OK
                                 # if "obs" is a string variable -- since
