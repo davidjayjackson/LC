@@ -21,13 +21,13 @@
 
 #### anova1(x,fac,sort=F,progress=F)
 
-x           dependent variable (to be tested for dependence)
-fac         factor on which the dependent variable may depend
+* x           dependent variable (to be tested for dependence)
+* fac         factor on which the dependent variable may depend
             Note: if the variable is numeric, then it is
             converted to catagorical (a factor) for the test
-sort        if TRUE, then the output is sorted into descending
+* sort        if TRUE, then the output is sorted into descending
             order of the number of occurences of each factor
-progress    if TRUE, a graph is displayed showing the progress
+* progress    if TRUE, a graph is displayed showing the progress
             of the computation
             
 #### Example:
@@ -53,39 +53,35 @@ variables are treated the same as non-numerics.
 
 #### aovper(t,x,lowfreq=0,hifreq=0,bins=4,resmag=1,plot=T,outfile=NULL)
 
-t           vector of times of observation
-x           vector of data values
-lowfreq     lowest frequency to test
-hifreq      highest frequency to test
-bins        number of bins to use in AoV computation
-resmag      resolution magnification.  The number of frequencies
+* t           vector of times of observation
+* x           vector of data values
+* lowfreq     lowest frequency to test
+* hifreq      highest frequency to test
+* bins        number of bins to use in AoV computation
+* resmag      resolution magnification.  The number of frequencies
             tested for a given frequency range is multiplied by
             this parameter
-plot        if TRUE, the periodogram is plotted
+* plot        if TRUE, the periodogram is plotted
 outfile     if a string variable rather than null, the results
             are written to a file of this name
 
-Examples:
+#### Examples:
 
-aovper(t,x)                     # compute the AoV periodogram
+* aovper(t,x)                     # compute the AoV periodogram
                                 # for x as a function of t
-aovper(t,x,0,.02)               # compute the AoV periodogram
+* aovper(t,x,0,.02)               # compute the AoV periodogram
                                 # for frequencies from 0 to 0.02
-aovper(t,x,bins=12)             # compute the AoV periodogram using
+* aovper(t,x,bins=12)             # compute the AoV periodogram using
                                 # 12 bins rather than the default 4
-aovper(t,x,0,.01,resmag=10)     # compute the AoV periodogram for
+* aovper(t,x,0,.01,resmag=10)     # compute the AoV periodogram for
                                 # frequencies from 0 to 0.01, scanning
                                 # frequency space at 10 times higher
                                 # than the usual resolution (i.e.,
                                 # oversampling by a factor of 40
                                 # rather than the default factor of 4
-########################################################################
 
-### dcdft
-                        *********
-                        * dcdft *
-                        *********
-Compute the DCDFT periodogram.
+
+### dcdft Compute the DCDFT periodogram.
 
 #### dcdft(t,x,lowfreq=0,hifreq=0,resmag=1,plot=T,outfile=NULL)
 
